@@ -1,0 +1,12 @@
+repositories:
+  - name: harbor
+    url: harbor.xxx.dev/saas/helm
+    oci: true
+
+releases:
+  - name: task-service
+    chart: ../tasks/helm/tasks
+
+  - name: storage
+    chart: harbor/storage
+    version: 1.0.0
